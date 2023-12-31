@@ -1,0 +1,169 @@
+/* --------header--------- */
+
+.main-header {
+    background: #8B4513;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    position: fixed;
+
+
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    height: 50px;
+    width: 50px;
+
+}
+
+
+
+/* ------main content-------- */
+.main-content {
+    height: max-content;
+    background: rgb(233, 217, 220);
+    position: relative;
+    top: 9px;
+}
+
+.center {
+    padding: 10px;
+}
+
+.search-container {
+    margin: 20px auto;
+    text-align: center;
+    max-width: 100%;
+    position: relative;
+    top: 10px;
+
+}
+
+.search-container .search-input {
+    width: 40%;
+    box-sizing: border-box;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    padding: 14px 15px 14px 20px;
+    border: 1px solid #aabcca;
+    border-right: 0;
+    color: #000000;
+    outline: none;
+}
+
+.search-container .search-btn {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #0768b3;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    color: #ffffff;
+    padding: 15px 22px;
+    margin-left: -4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.search-container .search-btn:hover {
+    background-color: #016034;
+}
+
+.card {
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: -1px 5px 10px 5px rgba(42, 42, 42, 0.2);
+    padding: 10px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card>img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card>span {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.card>span>h4 {
+    font-size: medium;
+}
+
+.card>span>h4:first-child {
+    display: flex;
+    align-items: center;
+    background-color: rgb(19, 176, 1);
+    border-radius: 5px;
+    padding: 0 5px 0;
+    color: white;
+}
+
+.card>span>h4:first-child .fa-star {
+    font-size: small;
+    padding: 0 10px 3px 0;
+}
+
+.restaurant-list {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* ----- */
+/* footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    /* position: relative;
+    top: 464px; */
+}
+
+.footer-main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-section {
+    max-width: 300px;
+}
+
+.footer-sub {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* -------media querry--------- */
+@media only screen and (max-width: 767px) {
+    .main-header {
+        display: flex;
+        /* flex-direction: column; */
+    }
+
+    .input .btn {
+        height: 20px;
+        width: 150px;
+    }
+
+
+}
